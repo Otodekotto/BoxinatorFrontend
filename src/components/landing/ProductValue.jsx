@@ -18,25 +18,21 @@ function ProductValues() {
   return (
     <Box component="section" sx={{ display: "flex", overflow: "hidden" }}>
       <Container sx={{ mt: 15, mb: 30, display: "flex", position: "relative" }}>
-        <Box
-          component="img"
-          src="/static/themes/onepirate/productCurvyLines.png"
-          alt="curvy lines"
-          sx={{ pointerEvents: "none", position: "absolute", top: -180 }}
-        />
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
               <Box
                 component="img"
                 src={FastDeliveryIcon}
-                alt="suitcase"
                 sx={{ height: 100 }}
               />
-              <Typography variant="h6" sx={{ my: 5 }}>
+              <Typography
+                variant="h6"
+                sx={{ my: 5, fontFamily: "-apple-system", fontWeight: "bold" }}
+              >
                 The Fastest Delivery
               </Typography>
-              <Typography variant="h5">
+              <Typography variant="h5" sx={{ fontFamily: "-apple-system" }}>
                 {
                   "Lightning-fast delivery that brings smiles. Speedy service, prompt and reliable. "
                 }
@@ -50,13 +46,15 @@ function ProductValues() {
               <Box
                 component="img"
                 src={ShippingBoatIcon}
-                alt="graph"
                 sx={{ height: 100 }}
               />
-              <Typography variant="h6" sx={{ my: 5 }}>
+              <Typography
+                variant="h6"
+                sx={{ my: 5, fontFamily: "-apple-system", fontWeight: "bold" }}
+              >
                 Cargo Shipping
               </Typography>
-              <Typography variant="h5">
+              <Typography variant="h5" sx={{ fontFamily: "-apple-system" }}>
                 {
                   "Sail with confidence, trust in our boat shipping expertise. Smooth and secure journeys, ensuring your vessel arrives safely. "
                 }
@@ -67,16 +65,14 @@ function ProductValues() {
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
-                component="img"
-                src={ProtectionIcon}
-                alt="clock"
-                sx={{ height: 100 }}
-              />
-              <Typography variant="h6" sx={{ my: 5 }}>
+              <Box component="img" src={ProtectionIcon} sx={{ height: 100 }} />
+              <Typography
+                variant="h6"
+                sx={{ my: 5, fontFamily: "-apple-system", fontWeight: "bold" }}
+              >
                 Safest Delivery
               </Typography>
-              <Typography variant="h5">
+              <Typography variant="h5" sx={{ fontFamily: "-apple-system" }}>
                 {
                   "Your safety is our top priority. With utmost care and caution, we ensure secure delivery, protecting your items throughout the journey."
                 }

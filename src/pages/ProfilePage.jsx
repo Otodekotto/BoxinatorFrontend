@@ -1,21 +1,14 @@
-import keycloak from "../keycloak";
+import React from "react"
+import ProfileCard from "../components/profile/ProfileCard"
+import ProfileInfoCard from "../components/profile/ProfilePackageInfoCard"
 
-function ProfilePage() {
-
+const ProfilePage = () => {
   return (
     <div>
-      <h1>Profile Page</h1>
-      { keycloak.tokenParsed &&
-       <div>
-          <h4>User</h4>
-          
-            <p>Name: { keycloak.tokenParsed.name}</p>
-            <p>Username: { keycloak.tokenParsed.preferred_username}</p>
-            <p>Sub: { keycloak.tokenParsed.sub }</p>
-          
-         </div>
-      }
+      <ProfileCard></ProfileCard>
+      <ProfileInfoCard></ProfileInfoCard>
     </div>
-  );
+  )
 }
-export default ProfilePage;
+
+export default ProfilePage
